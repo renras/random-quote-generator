@@ -1,0 +1,67 @@
+article {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#text {
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+}
+
+.quote-left {
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+q {
+  quotes: none;
+  font-size: 30px;
+}
+
+#author {
+  font-size: 15px;
+  text-align: end;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials a {
+  font-size: 15px;
+  width: 40px;
+  border: none;
+  transition: background-color 1s;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.socialIcon {
+  color: white;
+  height: 100%;
+}
+
+#new-quote {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  transition: background-color 1s;
+}
+
+button:hover {
+  cursor: pointer;
+}

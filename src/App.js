@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import QuoteContainer from "./Components/QuoteContainer";
+import { useSelector } from "react-redux";
 
 function App() {
+  const currentColor = useSelector(
+    (state) => state.quoteContainer.currentColor
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main style={{ backgroundColor: currentColor }}>
+      <QuoteContainer />
+    </main>
   );
 }
 
